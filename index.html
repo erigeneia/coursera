@@ -53,7 +53,7 @@
 let store = {};
 
 function loadData() {
-    let promise = d3.csv("routes.csv"); //TODO 1: Add the code to load the CSV file named "routes.csv" | 1 Line
+    let promise = d3.csv("./routes.csv"); //TODO 1: Add the code to load the CSV file named "routes.csv" | 1 Line
     return promise.then(routes => {
         store.routes = routes; //TODO 2: Save the routes into our store variable;
         return store;
