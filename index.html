@@ -71,10 +71,7 @@ function groupByAirline(data) {
 
         currentData.Count += 1; //TODO: Increment the count (number of routes) of airline.
 
-        result[d.AirlineID] = currentData.map(d => {
-          d.Count = currentData.Count;
-          return d;
-        }); //TODO: Save the updated information in the dictionary using the airline id as key.
+    //   result[d.AirlineID] = currentData; //TODO: Save the updated information in the dictionary using the airline id as key.
 
         return result;
     }, {})
